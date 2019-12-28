@@ -3,6 +3,7 @@ import CardList from '../components/CardList';
 // import {robots} from './robots';
 import SearchBox from '../components/SearchBox';
 import './App.css';
+import gith from './github.png';
 
 // STATE required for searchobox to cmmunicate with cardlist
 import ErrorBoundry from '../components/ErrorBoundry';
@@ -41,7 +42,9 @@ class App extends Component{
 		<ErrorBoundry>
 			<CardList robots ={filteredRobots}/>
 		</ErrorBoundry>
-		
+		<footer className='pv4 ph3 ph5-m ph6-1 black'>
+			<a href='https://github.com/greykoalacode' rel="noopener noreferrer" target='_blank'><img alt="git" src={gith}></img></a> 
+		</footer>
 	</div>
 	);
 	
