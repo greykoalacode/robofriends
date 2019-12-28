@@ -4,8 +4,75 @@ font-style: normal;
 font-weight: normal;
 src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
 }
-h1{
-	font-family: 'SEGA LOGO FONT';
-	font-weight: 200;
+
+h1,.title{
+	font-family: 'SEGA LOGO FONT',sans-serif;
+	font-weight: 10;
+	font-size: 4em;
+	letter-spacing: 0.25em;
 	color: #0ccac4;
+}
+@media screen and (max-width:700px ){
+	.title{
+		font-size:2em;
+	}
+	.cardd{
+		height: 70vh;
+		width: 50vw;
+	}
+	.dataN{
+		font-size:1em;
+	}
+	.dataE{
+		font-size: 1em;
+		margin:10px;
+	}
+}
+@media screen and (max-width:500px){
+	.title{
+		font-weight: 5;
+		font-size: 1em;
+	}
+	.search{
+		height: 1vh;
+		width: 40vw;
+	}
+	.cardd{
+		height: 60vh;
+		width: 50vw;
+	}
+	.dataN{
+		font-size:1em;
+	}
+	.dataE{
+		font-size: 0.8em;
+	}
+	
+}
+@media screen and (max-width:400px){
+
+.cardd{
+		height: 60vh;
+		width: 60vw;
+	}
+	.dataN{
+		font-size:0.9em;
+	}
+	.dataE{
+		font-size: 0.8em;
+		
+	}
+}
+@media screen and (max-width:320px){
+	.cardd{
+		height: 55vh;
+		width: 75vw;
+	}
+	.dataN{
+		font-size:0.9em;
+	}
+	.dataE{
+		font-size: 0.7em;
+		
+	}
 }
